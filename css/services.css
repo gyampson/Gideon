@@ -6,6 +6,7 @@ span{
 body{
     font-family: "Parkinsans", serif;
     width: 100%;
+    background-size: 30px 30px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -77,6 +78,10 @@ services{
 }
 }
 @media only screen and (max-width: 767px) {
+    body{
+        background: repeating-radial-gradient(circle, #000, #000 5px, transparent 6px);
+        color: aliceblue;
+    }
     services{
         grid-gap: 20px;
         justify-content: center;
@@ -86,6 +91,8 @@ services{
         padding-top: 100px;
         text-align: center;
         position: relative;
+        background: linear-gradient(rgba(1, 169, 15, 0.6), transparent);
+        backdrop-filter: blur(10px);
     } 
     .service h1{
         font-size: 50px;
@@ -98,15 +105,18 @@ services{
         padding: 20px;
         position: relative;
          bottom: 14px;
-        background-color: rgba(3, 128, 30, 1) ;
+        background-color: rgba(3, 128, 30, 0.5)  ;
+        backdrop-filter: blur(10px);
     }
-    .climate{
+    .bossu .climate{
         display: flex;
         flex-direction: column; 
        position: relative;
-       box-shadow: 0 20px 14px rgba(36, 171, 230, 3);
        padding-bottom: 5px;
-       
+       background: linear-gradient(rgba(0, 0, 0, 0.06), transparent);
+       border: 1px solid rgba(255, 255, 255, 0.1);
+       box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+       backdrop-filter: blur(2px);
      }
      .climate-pic{
         width: 100%;
@@ -128,6 +138,10 @@ services{
        position: relative;
         box-shadow: 30px 30px 30px rgba(42, 192, 100, 3);
         padding-bottom: 5px;
+        background: linear-gradient(rgba(10, 205, 26, 0.6), transparent);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(1px);
      }
     .micro h1{
         font-size: 20px;
@@ -136,7 +150,7 @@ services{
         padding: 20px;
         position: relative;
          bottom: 14px;
-        background-color: rgba(3, 128, 30, 1) ;
+        background-color: rgba(3, 128, 30, 0.9) ;
      }
     
      .micro span{

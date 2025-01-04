@@ -117,3 +117,20 @@ gsap.from(".sect ", {
 })
 
 
+
+
+gsap.set(".fab", {
+    borderRadius: 0,
+  });
+  gsap.to(".fab", {
+    borderRadius: 50,
+    duration: 1,
+    x: 30, 
+    ease: "power1",
+    yoyo: true,
+    repeat: -1,
+    stagger:0.9,
+  });
+
+
+  
