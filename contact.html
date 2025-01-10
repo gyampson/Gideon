@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/80309f9c84.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <title>Contact</title>
+</head>
+<body>
+ 
+    <script src="scripts/header.js"></script>
+    <div class="contain"> 
+    <div class="container">   
+    <img class="photo1" src="asset/Photo (1).png">
+</div>
+<div class="container2">
+    <span1>We build great business</span1>
+    <div class="office">
+       
+        <span>     
+         <p1>  <img src="asset/Vector.png">OUR OFFICE</p1>
+         <p>91 E. Lexington Street </br>Apt 688 Gibsonia, </br> PA 15044</p>
+        </span>
+    </div>
+    <div class="info"> 
+<span>
+
+    <img src="asset/Vector (1).png"> info@example.com <br/>
+</span>
+
+<span>
+    <img src="asset/Vector (2).png"> 215-555-1234 <br/>
+</span>
+ </div>
+</div>
+<contact>
+    <div class=" contact-left">
+       <h1>Get in touch with us</h1>
+       <form action="https://api.web3forms.com/submit" method="POST">
+       <input type="hidden" name="access_key" value="8b97bb11-70ec-4379-b3e6-54d20814171c">
+        <label> YOUR NAME</label>
+        <input type="text" name="Name" placeholder="Your Name" required/>
+        <label> YOUR EMAIL</label>
+          <input type="email" name="Email" placeholder="Your Email" required/>
+         
+          
+          </div>
+  
+          
+          <div class=" contact-right">
+        
+           
+            <label>YOUR MESSAGE</label>
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+          <p id="msg"></p>
+          <button class="btn2" type="submit">Send Message</button>  </form>
+          </form>
+          </div>
+</contact>
+</div>
+<script src="scripts/loader.js"></script>
+<script src="scripts/menu.js"></script>
+<script>
+  setTimeout(function(){
+   fun();
+
+  }, 2000 );
+ 
+  function fun(){
+   document.getElementById('preloader').style.display = 'none';
+  }
+   </script>
+<script>
+   const msg = document.getElementById("msg");
+   form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+</script>
+</body>
+</html>

@@ -11,7 +11,7 @@ const headerHTML = `
               </li>
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">KNOWLEDGE LIBRARY</a></li>
-              <li><a href="login.html">CONTACT US</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
               <li><a href="login.html"> BLOG</a></li>
               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
